@@ -1,0 +1,4 @@
+- **Project Name**: My Computer Model  
+- **Completion Time**: 2024  
+- **Course**: Circuit and Electronics  
+- **Software Used**: Quartus II
