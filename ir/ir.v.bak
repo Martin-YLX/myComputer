@@ -1,0 +1,13 @@
+module ir(
+  input clk,
+  input ir_ld,
+  input [7:0] a,
+  output reg [7:0] x
+);
+
+always @(negedge clk) begin
+  x <= ir_ld ? a : x;
+end
+
+endmodule
+

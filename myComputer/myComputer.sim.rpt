@@ -1,0 +1,507 @@
+Simulator report for myComputer
+Sat Dec 21 15:59:27 2024
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 5.0 us       ;
+; Simulation Netlist Size     ; 271 nodes    ;
+; Simulation Coverage         ;      85.96 % ;
+; Total Number of Transitions ; 28934        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; myComputer.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------------------------+
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      85.96 % ;
+; Total nodes checked                                 ; 271          ;
+; Total output ports checked                          ; 292          ;
+; Total output ports with complete 1/0-value coverage ; 251          ;
+; Total output ports with no 1/0-value coverage       ; 36           ;
+; Total output ports with no 1-value coverage         ; 38           ;
+; Total output ports with no 0-value coverage         ; 39           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                   ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; |myComputer|au:inst11|Add0~4                                                                             ; |myComputer|au:inst11|Add0~4                                                                       ; cout             ;
+; |myComputer|au:inst11|Add0~5                                                                             ; |myComputer|au:inst11|Add0~5                                                                       ; combout          ;
+; |myComputer|au:inst11|Add0~5                                                                             ; |myComputer|au:inst11|Add0~6                                                                       ; cout             ;
+; |myComputer|au:inst11|Add0~7                                                                             ; |myComputer|au:inst11|Add0~7                                                                       ; combout          ;
+; |myComputer|au:inst11|Add0~7                                                                             ; |myComputer|au:inst11|Add0~8                                                                       ; cout             ;
+; |myComputer|au:inst11|Add0~13                                                                            ; |myComputer|au:inst11|Add0~13                                                                      ; combout          ;
+; |myComputer|au:inst11|Add0~13                                                                            ; |myComputer|au:inst11|Add0~14                                                                      ; cout             ;
+; |myComputer|au:inst11|Add0~15                                                                            ; |myComputer|au:inst11|Add0~15                                                                      ; combout          ;
+; |myComputer|au:inst11|Add0~15                                                                            ; |myComputer|au:inst11|Add0~16                                                                      ; cout             ;
+; |myComputer|au:inst11|Add0~17                                                                            ; |myComputer|au:inst11|Add0~17                                                                      ; combout          ;
+; |myComputer|au:inst11|Add0~17                                                                            ; |myComputer|au:inst11|Add0~18                                                                      ; cout             ;
+; |myComputer|au:inst11|Add0~19                                                                            ; |myComputer|au:inst11|Add0~19                                                                      ; combout          ;
+; |myComputer|au:inst11|Add0~19                                                                            ; |myComputer|au:inst11|Add0~20                                                                      ; cout             ;
+; |myComputer|au:inst11|Add0~22                                                                            ; |myComputer|au:inst11|Add0~22                                                                      ; combout          ;
+; |myComputer|au:inst11|Add0~22                                                                            ; |myComputer|au:inst11|Add0~23                                                                      ; cout             ;
+; |myComputer|au:inst11|Add0~25                                                                            ; |myComputer|au:inst11|Add0~25                                                                      ; combout          ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[0] ; portadataout0    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[1] ; portadataout1    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[2] ; portadataout2    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[3] ; portadataout3    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[4] ; portadataout4    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[5] ; portadataout5    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[6] ; portadataout6    ;
+; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|ram_block1a0 ; |myComputer|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_hi91:auto_generated|q_a[7] ; portadataout7    ;
+; |myComputer|pc:inst8|c[0]                                                                                ; |myComputer|pc:inst8|c[0]                                                                          ; regout           ;
+; |myComputer|pc:inst8|c[1]                                                                                ; |myComputer|pc:inst8|c[1]                                                                          ; regout           ;
+; |myComputer|pc:inst8|c[2]                                                                                ; |myComputer|pc:inst8|c[2]                                                                          ; regout           ;
+; |myComputer|pc:inst8|c[3]                                                                                ; |myComputer|pc:inst8|c[3]                                                                          ; regout           ;
+; |myComputer|pc:inst8|c[4]                                                                                ; |myComputer|pc:inst8|c[4]                                                                          ; regout           ;
+; |myComputer|pc:inst8|c[5]                                                                                ; |myComputer|pc:inst8|c[5]                                                                          ; regout           ;
+; |myComputer|pc:inst8|c[0]~8                                                                              ; |myComputer|pc:inst8|c[0]~8                                                                        ; combout          ;
+; |myComputer|pc:inst8|c[0]~8                                                                              ; |myComputer|pc:inst8|c[0]~9                                                                        ; cout             ;
+; |myComputer|pc:inst8|c[1]~10                                                                             ; |myComputer|pc:inst8|c[1]~10                                                                       ; combout          ;
+; |myComputer|pc:inst8|c[1]~10                                                                             ; |myComputer|pc:inst8|c[1]~11                                                                       ; cout             ;
+; |myComputer|pc:inst8|c[2]~12                                                                             ; |myComputer|pc:inst8|c[2]~12                                                                       ; combout          ;
+; |myComputer|pc:inst8|c[2]~12                                                                             ; |myComputer|pc:inst8|c[2]~13                                                                       ; cout             ;
+; |myComputer|pc:inst8|c[3]~14                                                                             ; |myComputer|pc:inst8|c[3]~14                                                                       ; combout          ;
+; |myComputer|pc:inst8|c[3]~14                                                                             ; |myComputer|pc:inst8|c[3]~15                                                                       ; cout             ;
+; |myComputer|pc:inst8|c[4]~16                                                                             ; |myComputer|pc:inst8|c[4]~16                                                                       ; combout          ;
+; |myComputer|pc:inst8|c[4]~16                                                                             ; |myComputer|pc:inst8|c[4]~17                                                                       ; cout             ;
+; |myComputer|pc:inst8|c[5]~18                                                                             ; |myComputer|pc:inst8|c[5]~18                                                                       ; combout          ;
+; |myComputer|pc:inst8|c[5]~18                                                                             ; |myComputer|pc:inst8|c[5]~19                                                                       ; cout             ;
+; |myComputer|pc:inst8|c[6]~20                                                                             ; |myComputer|pc:inst8|c[6]~20                                                                       ; combout          ;
+; |myComputer|au:inst11|LessThan0~1                                                                        ; |myComputer|au:inst11|LessThan0~1                                                                  ; cout             ;
+; |myComputer|au:inst11|LessThan0~3                                                                        ; |myComputer|au:inst11|LessThan0~3                                                                  ; cout             ;
+; |myComputer|au:inst11|LessThan0~5                                                                        ; |myComputer|au:inst11|LessThan0~5                                                                  ; cout             ;
+; |myComputer|au:inst11|LessThan0~7                                                                        ; |myComputer|au:inst11|LessThan0~7                                                                  ; cout             ;
+; |myComputer|au:inst11|LessThan0~9                                                                        ; |myComputer|au:inst11|LessThan0~9                                                                  ; cout             ;
+; |myComputer|au:inst11|LessThan0~11                                                                       ; |myComputer|au:inst11|LessThan0~11                                                                 ; cout             ;
+; |myComputer|au:inst11|LessThan0~13                                                                       ; |myComputer|au:inst11|LessThan0~13                                                                 ; cout             ;
+; |myComputer|au:inst11|LessThan0~14                                                                       ; |myComputer|au:inst11|LessThan0~14                                                                 ; combout          ;
+; |myComputer|ir:inst1|x[4]                                                                                ; |myComputer|ir:inst1|x[4]                                                                          ; regout           ;
+; |myComputer|ir:inst1|x[5]                                                                                ; |myComputer|ir:inst1|x[5]                                                                          ; regout           ;
+; |myComputer|ir:inst1|x[6]                                                                                ; |myComputer|ir:inst1|x[6]                                                                          ; regout           ;
+; |myComputer|ir:inst1|x[7]                                                                                ; |myComputer|ir:inst1|x[7]                                                                          ; regout           ;
+; |myComputer|ins_decode:inst13|Decoder0~0                                                                 ; |myComputer|ins_decode:inst13|Decoder0~0                                                           ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~1                                                                 ; |myComputer|ins_decode:inst13|Decoder0~1                                                           ; combout          ;
+; |myComputer|sm:inst14|sm                                                                                 ; |myComputer|sm:inst14|sm                                                                           ; regout           ;
+; |myComputer|con_signal:inst15|ram_re                                                                     ; |myComputer|con_signal:inst15|ram_re                                                               ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~2                                                                 ; |myComputer|ins_decode:inst13|Decoder0~2                                                           ; combout          ;
+; |myComputer|ins_decode:inst13|in1~1                                                                      ; |myComputer|ins_decode:inst13|in1~1                                                                ; combout          ;
+; |myComputer|inst20[1]~8                                                                                  ; |myComputer|inst20[1]~8                                                                            ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~3                                                                 ; |myComputer|ins_decode:inst13|Decoder0~3                                                           ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~4                                                                 ; |myComputer|ins_decode:inst13|Decoder0~4                                                           ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~5                                                                 ; |myComputer|ins_decode:inst13|Decoder0~5                                                           ; combout          ;
+; |myComputer|con_signal:inst15|au_en~9                                                                    ; |myComputer|con_signal:inst15|au_en~9                                                              ; combout          ;
+; |myComputer|ir:inst1|x[3]                                                                                ; |myComputer|ir:inst1|x[3]                                                                          ; regout           ;
+; |myComputer|ir:inst1|x[2]                                                                                ; |myComputer|ir:inst1|x[2]                                                                          ; regout           ;
+; |myComputer|reg_group:inst9|R0[1]                                                                        ; |myComputer|reg_group:inst9|R0[1]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux14~0                                                                      ; |myComputer|reg_group:inst9|Mux14~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R3[1]                                                                        ; |myComputer|reg_group:inst9|R3[1]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux14~1                                                                      ; |myComputer|reg_group:inst9|Mux14~1                                                                ; combout          ;
+; |myComputer|au:inst11|Equal0~0                                                                           ; |myComputer|au:inst11|Equal0~0                                                                     ; combout          ;
+; |myComputer|ir:inst1|x[0]                                                                                ; |myComputer|ir:inst1|x[0]                                                                          ; regout           ;
+; |myComputer|ir:inst1|x[1]                                                                                ; |myComputer|ir:inst1|x[1]                                                                          ; regout           ;
+; |myComputer|reg_group:inst9|Mux6~0                                                                       ; |myComputer|reg_group:inst9|Mux6~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux6~1                                                                       ; |myComputer|reg_group:inst9|Mux6~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~1                                                                             ; |myComputer|au:inst11|Add0~1                                                                       ; combout          ;
+; |myComputer|reg_group:inst9|R1[0]                                                                        ; |myComputer|reg_group:inst9|R1[0]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|R0[0]                                                                        ; |myComputer|reg_group:inst9|R0[0]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux15~0                                                                      ; |myComputer|reg_group:inst9|Mux15~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R3[0]                                                                        ; |myComputer|reg_group:inst9|R3[0]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux15~1                                                                      ; |myComputer|reg_group:inst9|Mux15~1                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux7~0                                                                       ; |myComputer|reg_group:inst9|Mux7~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux7~1                                                                       ; |myComputer|reg_group:inst9|Mux7~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~2                                                                             ; |myComputer|au:inst11|Add0~2                                                                       ; combout          ;
+; |myComputer|au:inst11|Equal0~1                                                                           ; |myComputer|au:inst11|Equal0~1                                                                     ; combout          ;
+; |myComputer|inst20[1]~9                                                                                  ; |myComputer|inst20[1]~9                                                                            ; combout          ;
+; |myComputer|au:inst11|t[7]~36                                                                            ; |myComputer|au:inst11|t[7]~36                                                                      ; combout          ;
+; |myComputer|au:inst11|t[7]~37                                                                            ; |myComputer|au:inst11|t[7]~37                                                                      ; combout          ;
+; |myComputer|inst20[1]~10                                                                                 ; |myComputer|inst20[1]~10                                                                           ; combout          ;
+; |myComputer|inst20[1]~11                                                                                 ; |myComputer|inst20[1]~11                                                                           ; combout          ;
+; |myComputer|inst20[5]~12                                                                                 ; |myComputer|inst20[5]~12                                                                           ; combout          ;
+; |myComputer|reg_group:inst9|R0[5]                                                                        ; |myComputer|reg_group:inst9|R0[5]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux10~0                                                                      ; |myComputer|reg_group:inst9|Mux10~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux10~1                                                                      ; |myComputer|reg_group:inst9|Mux10~1                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux2~0                                                                       ; |myComputer|reg_group:inst9|Mux2~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux2~1                                                                       ; |myComputer|reg_group:inst9|Mux2~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~9                                                                             ; |myComputer|au:inst11|Add0~9                                                                       ; combout          ;
+; |myComputer|reg_group:inst9|R1[4]                                                                        ; |myComputer|reg_group:inst9|R1[4]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux11~0                                                                      ; |myComputer|reg_group:inst9|Mux11~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R3[4]                                                                        ; |myComputer|reg_group:inst9|R3[4]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux11~1                                                                      ; |myComputer|reg_group:inst9|Mux11~1                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux3~0                                                                       ; |myComputer|reg_group:inst9|Mux3~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux3~1                                                                       ; |myComputer|reg_group:inst9|Mux3~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~10                                                                            ; |myComputer|au:inst11|Add0~10                                                                      ; combout          ;
+; |myComputer|reg_group:inst9|R1[3]                                                                        ; |myComputer|reg_group:inst9|R1[3]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|R0[3]                                                                        ; |myComputer|reg_group:inst9|R0[3]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux12~0                                                                      ; |myComputer|reg_group:inst9|Mux12~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R3[3]                                                                        ; |myComputer|reg_group:inst9|R3[3]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux12~1                                                                      ; |myComputer|reg_group:inst9|Mux12~1                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux4~0                                                                       ; |myComputer|reg_group:inst9|Mux4~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux4~1                                                                       ; |myComputer|reg_group:inst9|Mux4~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~11                                                                            ; |myComputer|au:inst11|Add0~11                                                                      ; combout          ;
+; |myComputer|reg_group:inst9|R1[2]                                                                        ; |myComputer|reg_group:inst9|R1[2]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|R0[2]                                                                        ; |myComputer|reg_group:inst9|R0[2]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux13~0                                                                      ; |myComputer|reg_group:inst9|Mux13~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux13~1                                                                      ; |myComputer|reg_group:inst9|Mux13~1                                                                ; combout          ;
+; |myComputer|reg_group:inst9|Mux5~0                                                                       ; |myComputer|reg_group:inst9|Mux5~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux5~1                                                                       ; |myComputer|reg_group:inst9|Mux5~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~12                                                                            ; |myComputer|au:inst11|Add0~12                                                                      ; combout          ;
+; |myComputer|inst20[5]~13                                                                                 ; |myComputer|inst20[5]~13                                                                           ; combout          ;
+; |myComputer|inst20[5]~14                                                                                 ; |myComputer|inst20[5]~14                                                                           ; combout          ;
+; |myComputer|inst20[5]~15                                                                                 ; |myComputer|inst20[5]~15                                                                           ; combout          ;
+; |myComputer|counter4:inst2|74161:inst|f74161:sub|9                                                       ; |myComputer|counter4:inst2|74161:inst|f74161:sub|9                                                 ; regout           ;
+; |myComputer|counter4:inst2|74161:inst|f74161:sub|87                                                      ; |myComputer|counter4:inst2|74161:inst|f74161:sub|87                                                ; regout           ;
+; |myComputer|mux4_3_1:inst3|dout[1]~8                                                                     ; |myComputer|mux4_3_1:inst3|dout[1]~8                                                               ; combout          ;
+; |myComputer|ins_decode:inst13|out1~1                                                                     ; |myComputer|ins_decode:inst13|out1~1                                                               ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[1]~9                                                                     ; |myComputer|mux4_3_1:inst3|dout[1]~9                                                               ; combout          ;
+; |myComputer|inst20[2]~16                                                                                 ; |myComputer|inst20[2]~16                                                                           ; combout          ;
+; |myComputer|inst20[2]~17                                                                                 ; |myComputer|inst20[2]~17                                                                           ; combout          ;
+; |myComputer|inst20[2]~18                                                                                 ; |myComputer|inst20[2]~18                                                                           ; combout          ;
+; |myComputer|inst20[2]~19                                                                                 ; |myComputer|inst20[2]~19                                                                           ; combout          ;
+; |myComputer|inst20[6]~20                                                                                 ; |myComputer|inst20[6]~20                                                                           ; combout          ;
+; |myComputer|reg_group:inst9|R0[6]                                                                        ; |myComputer|reg_group:inst9|R0[6]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux9~0                                                                       ; |myComputer|reg_group:inst9|Mux9~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux9~1                                                                       ; |myComputer|reg_group:inst9|Mux9~1                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux1~0                                                                       ; |myComputer|reg_group:inst9|Mux1~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux1~1                                                                       ; |myComputer|reg_group:inst9|Mux1~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~21                                                                            ; |myComputer|au:inst11|Add0~21                                                                      ; combout          ;
+; |myComputer|inst20[6]~21                                                                                 ; |myComputer|inst20[6]~21                                                                           ; combout          ;
+; |myComputer|inst20[6]~22                                                                                 ; |myComputer|inst20[6]~22                                                                           ; combout          ;
+; |myComputer|inst20[6]~23                                                                                 ; |myComputer|inst20[6]~23                                                                           ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[2]~10                                                                    ; |myComputer|mux4_3_1:inst3|dout[2]~10                                                              ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[2]~11                                                                    ; |myComputer|mux4_3_1:inst3|dout[2]~11                                                              ; combout          ;
+; |myComputer|inst20[3]~24                                                                                 ; |myComputer|inst20[3]~24                                                                           ; combout          ;
+; |myComputer|inst20[3]~25                                                                                 ; |myComputer|inst20[3]~25                                                                           ; combout          ;
+; |myComputer|inst20[3]~26                                                                                 ; |myComputer|inst20[3]~26                                                                           ; combout          ;
+; |myComputer|inst20[3]~27                                                                                 ; |myComputer|inst20[3]~27                                                                           ; combout          ;
+; |myComputer|inst20[7]~28                                                                                 ; |myComputer|inst20[7]~28                                                                           ; combout          ;
+; |myComputer|reg_group:inst9|R0[7]                                                                        ; |myComputer|reg_group:inst9|R0[7]                                                                  ; regout           ;
+; |myComputer|reg_group:inst9|Mux8~0                                                                       ; |myComputer|reg_group:inst9|Mux8~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux8~1                                                                       ; |myComputer|reg_group:inst9|Mux8~1                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux0~0                                                                       ; |myComputer|reg_group:inst9|Mux0~0                                                                 ; combout          ;
+; |myComputer|reg_group:inst9|Mux0~1                                                                       ; |myComputer|reg_group:inst9|Mux0~1                                                                 ; combout          ;
+; |myComputer|au:inst11|Add0~24                                                                            ; |myComputer|au:inst11|Add0~24                                                                      ; combout          ;
+; |myComputer|inst20[7]~29                                                                                 ; |myComputer|inst20[7]~29                                                                           ; combout          ;
+; |myComputer|inst20[7]~30                                                                                 ; |myComputer|inst20[7]~30                                                                           ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[3]~12                                                                    ; |myComputer|mux4_3_1:inst3|dout[3]~12                                                              ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[3]~13                                                                    ; |myComputer|mux4_3_1:inst3|dout[3]~13                                                              ; combout          ;
+; |myComputer|inst20[0]~31                                                                                 ; |myComputer|inst20[0]~31                                                                           ; combout          ;
+; |myComputer|inst20[0]~32                                                                                 ; |myComputer|inst20[0]~32                                                                           ; combout          ;
+; |myComputer|inst20[0]~33                                                                                 ; |myComputer|inst20[0]~33                                                                           ; combout          ;
+; |myComputer|inst20[0]~34                                                                                 ; |myComputer|inst20[0]~34                                                                           ; combout          ;
+; |myComputer|inst20[4]~35                                                                                 ; |myComputer|inst20[4]~35                                                                           ; combout          ;
+; |myComputer|inst20[4]~36                                                                                 ; |myComputer|inst20[4]~36                                                                           ; combout          ;
+; |myComputer|inst20[4]~37                                                                                 ; |myComputer|inst20[4]~37                                                                           ; combout          ;
+; |myComputer|inst20[4]~38                                                                                 ; |myComputer|inst20[4]~38                                                                           ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[0]~14                                                                    ; |myComputer|mux4_3_1:inst3|dout[0]~14                                                              ; combout          ;
+; |myComputer|mux4_3_1:inst3|dout[0]~15                                                                    ; |myComputer|mux4_3_1:inst3|dout[0]~15                                                              ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux0~0                                                                      ; |myComputer|HDdecoder:inst16|Mux0~0                                                                ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux1~0                                                                      ; |myComputer|HDdecoder:inst16|Mux1~0                                                                ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux2~0                                                                      ; |myComputer|HDdecoder:inst16|Mux2~0                                                                ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux3~0                                                                      ; |myComputer|HDdecoder:inst16|Mux3~0                                                                ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux4~0                                                                      ; |myComputer|HDdecoder:inst16|Mux4~0                                                                ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux5~0                                                                      ; |myComputer|HDdecoder:inst16|Mux5~0                                                                ; combout          ;
+; |myComputer|HDdecoder:inst16|Mux6~0                                                                      ; |myComputer|HDdecoder:inst16|Mux6~0                                                                ; combout          ;
+; |myComputer|decoder2_3:inst4|74139:inst|33~0                                                             ; |myComputer|decoder2_3:inst4|74139:inst|33~0                                                       ; combout          ;
+; |myComputer|decoder2_3:inst4|74139:inst|33~1                                                             ; |myComputer|decoder2_3:inst4|74139:inst|33~1                                                       ; combout          ;
+; |myComputer|ins_decode:inst13|movb~1                                                                     ; |myComputer|ins_decode:inst13|movb~1                                                               ; combout          ;
+; |myComputer|mux3_1:inst7|Mux7~2                                                                          ; |myComputer|mux3_1:inst7|Mux7~2                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux6~2                                                                          ; |myComputer|mux3_1:inst7|Mux6~2                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux5~2                                                                          ; |myComputer|mux3_1:inst7|Mux5~2                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux4~2                                                                          ; |myComputer|mux3_1:inst7|Mux4~2                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux3~2                                                                          ; |myComputer|mux3_1:inst7|Mux3~2                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux2~2                                                                          ; |myComputer|mux3_1:inst7|Mux2~2                                                                    ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~6                                                                 ; |myComputer|ins_decode:inst13|Decoder0~6                                                           ; combout          ;
+; |myComputer|sm:inst14|sm~0                                                                               ; |myComputer|sm:inst14|sm~0                                                                         ; combout          ;
+; |myComputer|mux2_1:inst10|y[1]~8                                                                         ; |myComputer|mux2_1:inst10|y[1]~8                                                                   ; combout          ;
+; |myComputer|ins_decode:inst13|Decoder0~7                                                                 ; |myComputer|ins_decode:inst13|Decoder0~7                                                           ; combout          ;
+; |myComputer|con_signal:inst15|reg_we~6                                                                   ; |myComputer|con_signal:inst15|reg_we~6                                                             ; combout          ;
+; |myComputer|reg_group:inst9|Decoder0~0                                                                   ; |myComputer|reg_group:inst9|Decoder0~0                                                             ; combout          ;
+; |myComputer|reg_group:inst9|Decoder0~1                                                                   ; |myComputer|reg_group:inst9|Decoder0~1                                                             ; combout          ;
+; |myComputer|reg_group:inst9|Decoder0~2                                                                   ; |myComputer|reg_group:inst9|Decoder0~2                                                             ; combout          ;
+; |myComputer|reg_group:inst9|Decoder0~3                                                                   ; |myComputer|reg_group:inst9|Decoder0~3                                                             ; combout          ;
+; |myComputer|mux2_1:inst10|y[0]~9                                                                         ; |myComputer|mux2_1:inst10|y[0]~9                                                                   ; combout          ;
+; |myComputer|mux2_1:inst10|y[5]~10                                                                        ; |myComputer|mux2_1:inst10|y[5]~10                                                                  ; combout          ;
+; |myComputer|mux2_1:inst10|y[4]~11                                                                        ; |myComputer|mux2_1:inst10|y[4]~11                                                                  ; combout          ;
+; |myComputer|mux2_1:inst10|y[3]~12                                                                        ; |myComputer|mux2_1:inst10|y[3]~12                                                                  ; combout          ;
+; |myComputer|mux2_1:inst10|y[2]~13                                                                        ; |myComputer|mux2_1:inst10|y[2]~13                                                                  ; combout          ;
+; |myComputer|counter4:inst2|inst3                                                                         ; |myComputer|counter4:inst2|inst3                                                                   ; regout           ;
+; |myComputer|counter4:inst2|74161:inst|f74161:sub|87~0                                                    ; |myComputer|counter4:inst2|74161:inst|f74161:sub|87~0                                              ; combout          ;
+; |myComputer|mux2_1:inst10|y[6]~14                                                                        ; |myComputer|mux2_1:inst10|y[6]~14                                                                  ; combout          ;
+; |myComputer|mux2_1:inst10|y[7]~15                                                                        ; |myComputer|mux2_1:inst10|y[7]~15                                                                  ; combout          ;
+; |myComputer|inst20[7]~39                                                                                 ; |myComputer|inst20[7]~39                                                                           ; combout          ;
+; |myComputer|inst20[5]~40                                                                                 ; |myComputer|inst20[5]~40                                                                           ; combout          ;
+; |myComputer|psw:inst12|gf                                                                                ; |myComputer|psw:inst12|gf                                                                          ; regout           ;
+; |myComputer|con_signal:inst15|pc_ld~2                                                                    ; |myComputer|con_signal:inst15|pc_ld~2                                                              ; combout          ;
+; |myComputer|con_signal:inst15|pc_ld~3                                                                    ; |myComputer|con_signal:inst15|pc_ld~3                                                              ; combout          ;
+; |myComputer|pc:inst8|Equal1~0                                                                            ; |myComputer|pc:inst8|Equal1~0                                                                      ; combout          ;
+; |myComputer|pc:inst8|WideNor0~0                                                                          ; |myComputer|pc:inst8|WideNor0~0                                                                    ; combout          ;
+; |myComputer|decoder2_3:inst4|74139:inst|33~2                                                             ; |myComputer|decoder2_3:inst4|74139:inst|33~2                                                       ; combout          ;
+; |myComputer|psw:inst12|gf~0                                                                              ; |myComputer|psw:inst12|gf~0                                                                        ; combout          ;
+; |myComputer|psw:inst12|gf~1                                                                              ; |myComputer|psw:inst12|gf~1                                                                        ; combout          ;
+; |myComputer|mux3_1:inst7|Mux7~3                                                                          ; |myComputer|mux3_1:inst7|Mux7~3                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux6~3                                                                          ; |myComputer|mux3_1:inst7|Mux6~3                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux5~3                                                                          ; |myComputer|mux3_1:inst7|Mux5~3                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux4~3                                                                          ; |myComputer|mux3_1:inst7|Mux4~3                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux3~3                                                                          ; |myComputer|mux3_1:inst7|Mux3~3                                                                    ; combout          ;
+; |myComputer|mux3_1:inst7|Mux2~3                                                                          ; |myComputer|mux3_1:inst7|Mux2~3                                                                    ; combout          ;
+; |myComputer|inst20[7]~41                                                                                 ; |myComputer|inst20[7]~41                                                                           ; combout          ;
+; |myComputer|con_signal:inst15|au_en~10                                                                   ; |myComputer|con_signal:inst15|au_en~10                                                             ; combout          ;
+; |myComputer|con_signal:inst15|mux_s~7                                                                    ; |myComputer|con_signal:inst15|mux_s~7                                                              ; combout          ;
+; |myComputer|reg_group:inst9|R3[1]~0                                                                      ; |myComputer|reg_group:inst9|R3[1]~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R0[0]~0                                                                      ; |myComputer|reg_group:inst9|R0[0]~0                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R3[0]~1                                                                      ; |myComputer|reg_group:inst9|R3[0]~1                                                                ; combout          ;
+; |myComputer|reg_group:inst9|R3[2]~2                                                                      ; |myComputer|reg_group:inst9|R3[2]~2                                                                ; combout          ;
+; |myComputer|counter4:inst2|74161:inst|f74161:sub|9~0                                                     ; |myComputer|counter4:inst2|74161:inst|f74161:sub|9~0                                               ; combout          ;
+; |myComputer|output[6]                                                                                    ; |myComputer|output[6]                                                                              ; padio            ;
+; |myComputer|output[5]                                                                                    ; |myComputer|output[5]                                                                              ; padio            ;
+; |myComputer|output[3]                                                                                    ; |myComputer|output[3]                                                                              ; padio            ;
+; |myComputer|output[2]                                                                                    ; |myComputer|output[2]                                                                              ; padio            ;
+; |myComputer|qa                                                                                           ; |myComputer|qa                                                                                     ; padio            ;
+; |myComputer|qb                                                                                           ; |myComputer|qb                                                                                     ; padio            ;
+; |myComputer|qc                                                                                           ; |myComputer|qc                                                                                     ; padio            ;
+; |myComputer|qd                                                                                           ; |myComputer|qd                                                                                     ; padio            ;
+; |myComputer|qe                                                                                           ; |myComputer|qe                                                                                     ; padio            ;
+; |myComputer|qf                                                                                           ; |myComputer|qf                                                                                     ; padio            ;
+; |myComputer|qg                                                                                           ; |myComputer|qg                                                                                     ; padio            ;
+; |myComputer|clkout                                                                                       ; |myComputer|clkout                                                                                 ; padio            ;
+; |myComputer|b[2]                                                                                         ; |myComputer|b[2]                                                                                   ; padio            ;
+; |myComputer|bsg[2]                                                                                       ; |myComputer|bsg[2]                                                                                 ; padio            ;
+; |myComputer|bsg[1]                                                                                       ; |myComputer|bsg[1]                                                                                 ; padio            ;
+; |myComputer|bsg[0]                                                                                       ; |myComputer|bsg[0]                                                                                 ; padio            ;
+; |myComputer|clk                                                                                          ; |myComputer|clk~corein                                                                             ; combout          ;
+; |myComputer|counter4:inst2|inst3~clkctrl                                                                 ; |myComputer|counter4:inst2|inst3~clkctrl                                                           ; outclk           ;
+; |myComputer|clk~clkctrl                                                                                  ; |myComputer|clk~clkctrl                                                                            ; outclk           ;
+; |myComputer|reg_group:inst9|R2[1]~feeder                                                                 ; |myComputer|reg_group:inst9|R2[1]~feeder                                                           ; combout          ;
+; |myComputer|reg_group:inst9|R0[1]~feeder                                                                 ; |myComputer|reg_group:inst9|R0[1]~feeder                                                           ; combout          ;
+; |myComputer|reg_group:inst9|R1[7]~feeder                                                                 ; |myComputer|reg_group:inst9|R1[7]~feeder                                                           ; combout          ;
+; |myComputer|reg_group:inst9|R2[7]~feeder                                                                 ; |myComputer|reg_group:inst9|R2[7]~feeder                                                           ; combout          ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |myComputer|pc:inst8|c[6]         ; |myComputer|pc:inst8|c[6]         ; regout           ;
+; |myComputer|pc:inst8|c[7]         ; |myComputer|pc:inst8|c[7]         ; regout           ;
+; |myComputer|pc:inst8|c[6]~20      ; |myComputer|pc:inst8|c[6]~21      ; cout             ;
+; |myComputer|pc:inst8|c[7]~22      ; |myComputer|pc:inst8|c[7]~22      ; combout          ;
+; |myComputer|reg_group:inst9|R2[1] ; |myComputer|reg_group:inst9|R2[1] ; regout           ;
+; |myComputer|reg_group:inst9|R1[1] ; |myComputer|reg_group:inst9|R1[1] ; regout           ;
+; |myComputer|reg_group:inst9|R2[5] ; |myComputer|reg_group:inst9|R2[5] ; regout           ;
+; |myComputer|reg_group:inst9|R1[5] ; |myComputer|reg_group:inst9|R1[5] ; regout           ;
+; |myComputer|reg_group:inst9|R3[5] ; |myComputer|reg_group:inst9|R3[5] ; regout           ;
+; |myComputer|reg_group:inst9|R2[4] ; |myComputer|reg_group:inst9|R2[4] ; regout           ;
+; |myComputer|reg_group:inst9|R0[4] ; |myComputer|reg_group:inst9|R0[4] ; regout           ;
+; |myComputer|reg_group:inst9|R2[3] ; |myComputer|reg_group:inst9|R2[3] ; regout           ;
+; |myComputer|reg_group:inst9|R2[2] ; |myComputer|reg_group:inst9|R2[2] ; regout           ;
+; |myComputer|reg_group:inst9|R3[2] ; |myComputer|reg_group:inst9|R3[2] ; regout           ;
+; |myComputer|reg_group:inst9|R1[6] ; |myComputer|reg_group:inst9|R1[6] ; regout           ;
+; |myComputer|reg_group:inst9|R2[6] ; |myComputer|reg_group:inst9|R2[6] ; regout           ;
+; |myComputer|reg_group:inst9|R3[6] ; |myComputer|reg_group:inst9|R3[6] ; regout           ;
+; |myComputer|reg_group:inst9|R2[7] ; |myComputer|reg_group:inst9|R2[7] ; regout           ;
+; |myComputer|reg_group:inst9|R1[7] ; |myComputer|reg_group:inst9|R1[7] ; regout           ;
+; |myComputer|reg_group:inst9|R3[7] ; |myComputer|reg_group:inst9|R3[7] ; regout           ;
+; |myComputer|mux3_1:inst7|Mux1~2   ; |myComputer|mux3_1:inst7|Mux1~2   ; combout          ;
+; |myComputer|mux3_1:inst7|Mux0~2   ; |myComputer|mux3_1:inst7|Mux0~2   ; combout          ;
+; |myComputer|mux3_1:inst7|Mux1~3   ; |myComputer|mux3_1:inst7|Mux1~3   ; combout          ;
+; |myComputer|mux3_1:inst7|Mux0~3   ; |myComputer|mux3_1:inst7|Mux0~3   ; combout          ;
+; |myComputer|output[4]             ; |myComputer|output[4]             ; padio            ;
+; |myComputer|output[1]             ; |myComputer|output[1]             ; padio            ;
+; |myComputer|input[1]              ; |myComputer|input[1]~corein       ; combout          ;
+; |myComputer|input[5]              ; |myComputer|input[5]~corein       ; combout          ;
+; |myComputer|din2[1]               ; |myComputer|din2[1]~corein        ; combout          ;
+; |myComputer|input[2]              ; |myComputer|input[2]~corein       ; combout          ;
+; |myComputer|input[6]              ; |myComputer|input[6]~corein       ; combout          ;
+; |myComputer|din2[2]               ; |myComputer|din2[2]~corein        ; combout          ;
+; |myComputer|input[3]              ; |myComputer|input[3]~corein       ; combout          ;
+; |myComputer|input[7]              ; |myComputer|input[7]~corein       ; combout          ;
+; |myComputer|din2[3]               ; |myComputer|din2[3]~corein        ; combout          ;
+; |myComputer|input[0]              ; |myComputer|input[0]~corein       ; combout          ;
+; |myComputer|input[4]              ; |myComputer|input[4]~corein       ; combout          ;
+; |myComputer|din2[0]               ; |myComputer|din2[0]~corein        ; combout          ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |myComputer|pc:inst8|c[6]         ; |myComputer|pc:inst8|c[6]         ; regout           ;
+; |myComputer|pc:inst8|c[7]         ; |myComputer|pc:inst8|c[7]         ; regout           ;
+; |myComputer|pc:inst8|c[6]~20      ; |myComputer|pc:inst8|c[6]~21      ; cout             ;
+; |myComputer|pc:inst8|c[7]~22      ; |myComputer|pc:inst8|c[7]~22      ; combout          ;
+; |myComputer|reg_group:inst9|R2[1] ; |myComputer|reg_group:inst9|R2[1] ; regout           ;
+; |myComputer|reg_group:inst9|R1[1] ; |myComputer|reg_group:inst9|R1[1] ; regout           ;
+; |myComputer|reg_group:inst9|R2[0] ; |myComputer|reg_group:inst9|R2[0] ; regout           ;
+; |myComputer|reg_group:inst9|R2[5] ; |myComputer|reg_group:inst9|R2[5] ; regout           ;
+; |myComputer|reg_group:inst9|R1[5] ; |myComputer|reg_group:inst9|R1[5] ; regout           ;
+; |myComputer|reg_group:inst9|R3[5] ; |myComputer|reg_group:inst9|R3[5] ; regout           ;
+; |myComputer|reg_group:inst9|R2[4] ; |myComputer|reg_group:inst9|R2[4] ; regout           ;
+; |myComputer|reg_group:inst9|R0[4] ; |myComputer|reg_group:inst9|R0[4] ; regout           ;
+; |myComputer|reg_group:inst9|R2[3] ; |myComputer|reg_group:inst9|R2[3] ; regout           ;
+; |myComputer|reg_group:inst9|R2[2] ; |myComputer|reg_group:inst9|R2[2] ; regout           ;
+; |myComputer|reg_group:inst9|R3[2] ; |myComputer|reg_group:inst9|R3[2] ; regout           ;
+; |myComputer|reg_group:inst9|R1[6] ; |myComputer|reg_group:inst9|R1[6] ; regout           ;
+; |myComputer|reg_group:inst9|R2[6] ; |myComputer|reg_group:inst9|R2[6] ; regout           ;
+; |myComputer|reg_group:inst9|R3[6] ; |myComputer|reg_group:inst9|R3[6] ; regout           ;
+; |myComputer|reg_group:inst9|R2[7] ; |myComputer|reg_group:inst9|R2[7] ; regout           ;
+; |myComputer|reg_group:inst9|R1[7] ; |myComputer|reg_group:inst9|R1[7] ; regout           ;
+; |myComputer|reg_group:inst9|R3[7] ; |myComputer|reg_group:inst9|R3[7] ; regout           ;
+; |myComputer|mux3_1:inst7|Mux1~2   ; |myComputer|mux3_1:inst7|Mux1~2   ; combout          ;
+; |myComputer|mux3_1:inst7|Mux0~2   ; |myComputer|mux3_1:inst7|Mux0~2   ; combout          ;
+; |myComputer|mux3_1:inst7|Mux1~3   ; |myComputer|mux3_1:inst7|Mux1~3   ; combout          ;
+; |myComputer|mux3_1:inst7|Mux0~3   ; |myComputer|mux3_1:inst7|Mux0~3   ; combout          ;
+; |myComputer|output[7]             ; |myComputer|output[7]             ; padio            ;
+; |myComputer|output[0]             ; |myComputer|output[0]             ; padio            ;
+; |myComputer|input[1]              ; |myComputer|input[1]~corein       ; combout          ;
+; |myComputer|input[5]              ; |myComputer|input[5]~corein       ; combout          ;
+; |myComputer|din2[1]               ; |myComputer|din2[1]~corein        ; combout          ;
+; |myComputer|input[2]              ; |myComputer|input[2]~corein       ; combout          ;
+; |myComputer|input[6]              ; |myComputer|input[6]~corein       ; combout          ;
+; |myComputer|din2[2]               ; |myComputer|din2[2]~corein        ; combout          ;
+; |myComputer|input[3]              ; |myComputer|input[3]~corein       ; combout          ;
+; |myComputer|input[7]              ; |myComputer|input[7]~corein       ; combout          ;
+; |myComputer|din2[3]               ; |myComputer|din2[3]~corein        ; combout          ;
+; |myComputer|input[0]              ; |myComputer|input[0]~corein       ; combout          ;
+; |myComputer|input[4]              ; |myComputer|input[4]~corein       ; combout          ;
+; |myComputer|din2[0]               ; |myComputer|din2[0]~corein        ; combout          ;
++-----------------------------------+-----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Dec 21 15:59:27 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off myComputer -c myComputer
+Info: Using vector source file "E:/FPGA/myComputer/myComputer.vwf"
+Warning: Can't find signal in vector source file for input pin "|myComputer|din2[1]"
+Warning: Can't find signal in vector source file for input pin "|myComputer|din2[2]"
+Warning: Can't find signal in vector source file for input pin "|myComputer|din2[3]"
+Warning: Can't find signal in vector source file for input pin "|myComputer|din2[0]"
+Info: Inverted registers were found during simulation
+    Info: Register: |myComputer|reg_group:inst9|R3[1]
+    Info: Register: |myComputer|reg_group:inst9|R0[0]
+    Info: Register: |myComputer|reg_group:inst9|R3[0]
+    Info: Register: |myComputer|reg_group:inst9|R3[2]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      85.96 %
+Info: Number of transitions in simulation is 28934
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sat Dec 21 15:59:27 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

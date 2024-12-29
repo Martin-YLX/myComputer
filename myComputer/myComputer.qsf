@@ -1,0 +1,122 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+# Date created = 11:51:24  December 09, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		myComputer_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY myComputer
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:51:24  DECEMBER 09, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP1"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_91 -to clk
+set_location_assignment PIN_71 -to input[7]
+set_location_assignment PIN_70 -to input[6]
+set_location_assignment PIN_69 -to input[5]
+set_location_assignment PIN_67 -to input[4]
+set_location_assignment PIN_65 -to input[3]
+set_location_assignment PIN_64 -to input[2]
+set_location_assignment PIN_63 -to input[1]
+set_location_assignment PIN_60 -to input[0]
+set_location_assignment PIN_86 -to output[7]
+set_location_assignment PIN_81 -to output[6]
+set_location_assignment PIN_80 -to output[5]
+set_location_assignment PIN_79 -to output[4]
+set_location_assignment PIN_75 -to output[3]
+set_location_assignment PIN_74 -to output[2]
+set_location_assignment PIN_73 -to output[1]
+set_location_assignment PIN_72 -to output[0]
+set_global_assignment -name MISC_FILE "E:/QuartusProject/myComputer/myComputer.dpf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name MISC_FILE "D:/QuartusProject/myComputer/myComputer.dpf"
+set_global_assignment -name BDF_FILE ../scan_led3/scan_led3.bdf
+set_global_assignment -name VHDL_FILE ../scan_led3/mux4_3_1.vhd
+set_global_assignment -name VHDL_FILE ../scan_led3/HDdecoder.vhd
+set_global_assignment -name BDF_FILE ../scan_led3/decoder2_3.bdf
+set_global_assignment -name BDF_FILE ../scan_led3/counter4.bdf
+set_global_assignment -name VERILOG_FILE ../sm/sm.v
+set_global_assignment -name VERILOG_FILE ../reg_group/reg_group.v
+set_global_assignment -name VERILOG_FILE ../psw/psw.v
+set_global_assignment -name VERILOG_FILE ../pc/pc.v
+set_global_assignment -name VERILOG_FILE ../mux3_1/mux3_1.v
+set_global_assignment -name VERILOG_FILE ../mux2_1/mux2_1.v
+set_global_assignment -name VERILOG_FILE ../ir/ir.v
+set_global_assignment -name VERILOG_FILE ../ins_decode/ins_decode.v
+set_global_assignment -name VERILOG_FILE ../con_signal/con_signal.v
+set_global_assignment -name VERILOG_FILE ../au/au.v
+set_global_assignment -name BDF_FILE myComputer.bdf
+set_global_assignment -name MIF_FILE RAM.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE myComputer.vwf
+set_global_assignment -name MIF_FILE FPGA.mif
+set_global_assignment -name MIF_FILE test1.mif
+set_location_assignment PIN_133 -to qa
+set_location_assignment PIN_134 -to qb
+set_location_assignment PIN_135 -to qc
+set_location_assignment PIN_136 -to qd
+set_location_assignment PIN_137 -to qe
+set_location_assignment PIN_139 -to qf
+set_location_assignment PIN_141 -to qg
+set_location_assignment PIN_100 -to clkout
+set_location_assignment PIN_101 -to b[2]
+set_location_assignment PIN_132 -to bsg[2]
+set_location_assignment PIN_129 -to bsg[1]
+set_location_assignment PIN_126 -to bsg[0]
+set_location_assignment PIN_59 -to din2[3]
+set_location_assignment PIN_58 -to din2[2]
+set_location_assignment PIN_57 -to din2[1]
+set_location_assignment PIN_55 -to din2[0]
+set_global_assignment -name VECTOR_COMPARE_TRIGGER_MODE INPUT_EDGE
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE myComputer.vwf
+set_global_assignment -name MISC_FILE "E:/FPGA/myComputer/myComputer.dpf"
+set_global_assignment -name FMAX_REQUIREMENT "40 MHz" -section_id CLK
+set_instance_assignment -name CLOCK_SETTINGS CLK -to clk
+set_global_assignment -name USE_TIMEQUEST_TIMING_ANALYZER OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name OUTPUT_PIN_LOAD 10 -section_id "3.3-V LVTTL"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, E:/QuartusProject/psw/psw.v
+source_file = 1, E:/QuartusProject/psw/db/psw.cbx.xml
+design_name = psw
+instance = comp, \g~I , g, psw, 1
+instance = comp, \clk~I , clk, psw, 1
+instance = comp, \g_en~I , g_en, psw, 1
+instance = comp, \gf~0 , gf~0, psw, 1
+instance = comp, \gf~reg0 , gf~reg0, psw, 1
+instance = comp, \gf~I , gf, psw, 1

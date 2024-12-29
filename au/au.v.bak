@@ -1,0 +1,31 @@
+module au(
+    input wire au_en,
+    input wire [3:0] ac,
+    input wire [7:0] a, b,
+    output reg [7:0] t,
+    output reg gf
+);
+
+    always @(au_en or ac or a or b) begin
+        t = 8'b00000000;
+        gf = 1'b0;
+
+        if (au_en == 1'b0) 
+            t = 8'hZZ;
+        else if (au_en == 1'b1) begin
+            if (ac == 4'b1000)
+                t = a + b;
+            else if (ac == 4'b1001) begin
+                gf = (b > a);
+                t = a - b;
+            end
+            else if (ac == 4'b0100 || ac == 4'b0101 || ac == 4'b1101)
+                t = a;
+            else
+                t = 8'hZZ;
+        end
+    end
+
+endmodule
+
+
